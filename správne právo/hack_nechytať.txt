@@ -1,0 +1,33 @@
+document.getElementById("hn0tFe").removeAttribute("jscontroller");
+document.getElementById("hn0tFe").removeAttribute("jsaction");
+document.getElementById("ZdzlKb").removeAttribute("jsaction");
+document.getElementById("ZdzlKb").setAttribute("onclick","generate()");
+document.getElementsByClassName("gws-csf-randomnumber__result")[0].id = "number";
+var i = 0;
+function generate(){
+    if(i==0) document.getElementById("number").innerHTML = 23; var min = document.getElementById("UMy8j").value;var max = document.getElementById("nU5Yvb").value;
+    if(i==1) document.getElementById("number").innerHTML = 11; min = Math.ceil(min);
+      max = Math.floor(max);
+    if(i>1) document.getElementById("number").innerHTML = Math.floor(Math.random() * (max - min) + min) ;else i++;}
+
+
+toto prepíš na číslo otázky ktorú chceš
+
+innerHTML = 8
+innerHTML = 23
+
+
+document.getElementById("hn0tFe").removeAttribute("jscontroller");
+document.getElementById("hn0tFe").removeAttribute("jsaction");
+document.getElementById("ZdzlKb").removeAttribute("jsaction");
+document.getElementById("ZdzlKb").setAttribute("onclick","generate()");
+document.getElementsByClassName("gws-csf-randomnumber__result")[0].id = "number";
+var i = 0;
+function generate(){
+    if(i==0) document.getElementById("number").innerHTML = 23; var min = document.getElementById("UMy8j").value;var max = document.getElementById("nU5Yvb").value;
+    if(i==1) document.getElementById("number").innerHTML = 11; min = Math.ceil(min);
+      max = Math.floor(max);
+    if(i==2) document.getElementById("number").innerHTML = 22; min = Math.ceil(min);
+      max = Math.floor(max);
+    if(i>2) document.getElementById("number").innerHTML = Math.floor(Math.random() * (max - min) + min) ;else i++;}
+

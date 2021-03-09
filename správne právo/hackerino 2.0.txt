@@ -1,0 +1,45 @@
+document.getElementById("hn0tFe").removeAttribute("jscontroller");
+document.getElementById("hn0tFe").removeAttribute("jsaction");
+document.getElementById("ZdzlKb").removeAttribute("jsaction");
+document.getElementById("ZdzlKb").setAttribute("onclick", "generate()");
+document.getElementsByClassName("gws-csf-randomnumber__result")[0].id = "number";
+var i = 0;
+var c = 0;
+var min;
+var max;
+var interval;
+function generate() {
+    min = document.getElementById("UMy8j").value;
+    max = document.getElementById("nU5Yvb").value;
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    if (i == 0) printGenerated(23); //sem napíšeš čísielka ktoré chceš ale dávaj bacha aby si to mala v rozsahu lebo inak to dá náhodné číslo
+    if (i == 1) printGenerated(11); //sem napíšeš čísielka ktoré chceš ale dávaj bacha aby si to mala v rozsahu lebo inak to dá náhodné číslo
+    if (i == 2) printGenerated(22); //sem napíšeš čísielka ktoré chceš ale dávaj bacha aby si to mala v rozsahu lebo inak to dá náhodné číslo
+    if (i > 2) printRnd();
+    else i++;
+}
+
+async function printGenerated(number) {
+    for(var j = 0; j<10;j++){
+        await printRandom();
+    }
+    if(number < min || number > max)
+        printRandom();
+    else
+    document.getElementById("number").innerHTML = number;
+}
+async function printRnd(){
+    for(var j = 0; j<10;j++){
+        await printRandom();
+    }
+ }
+
+function printRandom(){
+    document.getElementById("number").innerHTML = Math.floor(Math.random() * (max - min) + min);
+    return new Promise(resolve => {
+        setTimeout(() => {
+          resolve();
+        }, 50);
+      });
+}
